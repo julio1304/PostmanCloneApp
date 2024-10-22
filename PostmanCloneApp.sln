@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostmanCloneLibrary", "PostmanCloneLibrary\PostmanCloneLibrary.csproj", "{7626D84F-4F83-4A28-B3D7-6AD0349871DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostmanCloneUI", "PostmanCloneUI\PostmanCloneUI.csproj", "{7FC6132A-7C1E-4F09-B2B0-889B3727D396}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7626D84F-4F83-4A28-B3D7-6AD0349871DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7626D84F-4F83-4A28-B3D7-6AD0349871DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7626D84F-4F83-4A28-B3D7-6AD0349871DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7626D84F-4F83-4A28-B3D7-6AD0349871DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC6132A-7C1E-4F09-B2B0-889B3727D396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC6132A-7C1E-4F09-B2B0-889B3727D396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC6132A-7C1E-4F09-B2B0-889B3727D396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC6132A-7C1E-4F09-B2B0-889B3727D396}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DCF4575-3BFF-4A20-AE07-1D6FA84EB79C}
+	EndGlobalSection
+EndGlobal

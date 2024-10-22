@@ -1,0 +1,11 @@
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\bin\Debug\net8.0\PostmanCloneLibrary.deps.json
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\bin\Debug\net8.0\PostmanCloneLibrary.dll
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\bin\Debug\net8.0\PostmanCloneLibrary.pdb
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.AssemblyInfoInputs.cache
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.AssemblyInfo.cs
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.csproj.CoreCompileInputs.cache
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.dll
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\refint\PostmanCloneLibrary.dll
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\PostmanCloneLibrary.pdb
+C:\Users\julio\source\repos\PostmanCloneApp\PostmanCloneLibrary\obj\Debug\net8.0\ref\PostmanCloneLibrary.dll
