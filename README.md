@@ -13,7 +13,7 @@ Ideal for developers and testers, this tool simplifies API interaction and debug
 2. When the application launches, it should look like this:
 ![Postman Clone App ready to run](Images/Screenshot1.png "Ready to Run")
 3. Fill in your API URL and hit Go:
-![Postman Clone App results](Images/Screenshot1.png "Run Results")
+![Postman Clone App results](Images/Screenshot2.png "Run Results")
 4. Hire me.
 
 ## Upcoming Changes
