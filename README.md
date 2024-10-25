@@ -1,24 +1,24 @@
 # Postman Clone
-Postman Clone provides a user-friendly interface for making GET requests to APIs and viewing the responses in formatted JSON.
-Ideal for developers and testers, this tool simplifies API interaction and debugging, helping you efficiently validate and troubleshoot your API calls.
+The Postman Clone application offers a clean, user-friendly interface for making API requests and viewing responses in formatted JSON. Ideal for developers and testers, it simplifies API interactions, making it easier to validate and troubleshoot API calls.
 
+## Key Features
+* User-Friendly Interface: Easy navigation for making GET requests and viewing responses.
+* Formatted JSON Viewer: Read API responses in a clean, structured format.
+* Debugging and Troubleshooting: Simplifies API testing for faster validation.
 ## Technologies Used
 * C#
 * .NET 8
 * WinForms
 * HttpClient
 
-## Using The App
+## How to Use the App
 1. Download the executable file from the release section.
-2. When the application launches, it should look like this:
-![Postman Clone App ready to run](Images/Screenshot 2024-10-25 122335.png "Ready to Run")
-3. Fill in your API URL and hit Go:
-![Postman Clone App results](Images/Screenshot 2024-10-25 122327.png "Run Results")
-4. Hire me.
+2. Launch: Start the app, and you’ll see this interface: ![App Interface](Images/Screenshot 2024-10-25 122335.png "Ready to Run")
+ 3. Make Requests: Enter your API URL and press Go to send your request. ![App Result](Images/Screenshot 2024-10-25 122327.png "Run Results")
 
-## Upcoming Changes
-* Adding POST, PUT, PATCH, and DELETE functionality
-* Adding API headers
-* Handling Dependency Injection
-* Adding Logging
-* Create a web-based user interface for the application
+## Planned Features
+* Additional HTTP methods: POST, PUT, PATCH, DELETE
+* Support for API Headers
+* Dependency Injection for flexible architecture
+* Logging capabilities
+* A Web-Based Interface built using Blazor WebAssembly and WPF for cross-platform compatibility
