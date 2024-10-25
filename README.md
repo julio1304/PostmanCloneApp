@@ -13,8 +13,8 @@ The Postman Clone application offers a clean, user-friendly interface for making
 
 ## How to Use the App
 1. Download the executable file from the release section.
-2. Launch: Start the app, and you’ll see this interface: ![App Interface](Images/Screenshot3.png "Ready to Run")
- 3. Make Requests: Enter your API URL and press Go to send your request. ![App Result](Images/Screenshot4.png "Run Results")
+2. Launch: Start the app, and you’ll see this interface: ![App Interface](Images/Screenshot4.png "Ready to Run")
+ 3. Make Requests: Enter your API URL and press Go to send your request. ![App Result](Images/Screenshot3.png "Run Results")
 
 ## Planned Features
 * Additional HTTP methods: POST, PUT, PATCH, DELETE
