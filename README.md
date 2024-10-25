@@ -11,9 +11,9 @@ Ideal for developers and testers, this tool simplifies API interaction and debug
 ## Using The App
 1. Download the executable file from the release section.
 2. When the application launches, it should look like this:
-![Postman Clone App ready to run](Images/Screenshot1.png "Ready to Run")
+![Postman Clone App ready to run](Images/Screenshot 2024-10-25 122335.png "Ready to Run")
 3. Fill in your API URL and hit Go:
-![Postman Clone App results](Images/Screenshot2.png "Run Results")
+![Postman Clone App results](Images/Screenshot 2024-10-25 122327.png "Run Results")
 4. Hire me.
 
 ## Upcoming Changes
