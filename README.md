@@ -5,12 +5,15 @@ The Postman Clone application offers a clean, user-friendly interface for making
 * User-Friendly Interface: Easy navigation for making GET requests and viewing responses.
 * Formatted JSON Viewer: Read API responses in a clean, structured format.
 * Debugging and Troubleshooting: Simplifies API testing for faster validation.
+  
 ## Technologies Used
 * C#
 * .NET 8
 * WinForms
 * HttpClient
-
+* WPF
+* Blazor WebAssembly
+  
 ## How to Use the App
 1. Download the executable file from the release section.
 2. Launch: Start the app, and you’ll see this interface: ![App Interface](Images/Screenshot4.png "Ready to Run")
