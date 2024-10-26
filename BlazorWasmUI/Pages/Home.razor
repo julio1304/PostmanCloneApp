@@ -1,0 +1,119 @@
+﻿@page "/"
+@inject IApiAccess api
+
+<PageTitle>Postman Clone by Tim Corey</PageTitle>
+
+<div class="col-xl-8 mb-5">
+    <EditForm Model="@request" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="d-flex flex-row align-items-center mb-3">
+            <div class="h3 pe-2">API:</div>
+            <div class="pe-2">
+                <select id="httpVerbSelection" class="form-select"
+                        @bind="@request.HttpVerbSelection">
+                    <option value="" selected disabled>Select</option>
+                    @foreach (var action in Enum.GetValues<HttpAction>())
+                    {
+                        <option value="@action">@action</option>
+                    }
+                </select>
+            </div>
+            <div class="pe-2 flex-fill">
+                <input type="text" class="form-control" @bind="@request.ApiText" placeholder="Enter API endpoint" />
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        <!-- Tab Navigation for Body and Results -->
+        <div class="d-flex flex-row">
+            <div class="tab-button @bodyTabClass clickable"
+                 @onclick="BodyClick">
+                Body
+            </div>
+            <div class="tab-button @resultsTabClass clickable"
+                 @onclick="ResultsClick">
+                Results
+            </div>
+        </div>
+
+        <!-- Content area for Body and Results -->
+        <div class="border rounded-bottom p-3">
+            @if (bodySelected)
+            {
+                <textarea @bind="@request.Body"
+                          class="form-control min-vh-50" placeholder="Enter request body..."></textarea>
+            }
+            else
+            {
+                <div class="min-vh-50 results-display">
+                    @resultsText
+                </div>
+            }
+        </div>
+    </EditForm>
+</div>
+
+<!-- Fixed bottom status bar -->
+<div class="fixed-bottom px-4 status-bar border-top"
+     style="text-align:center">
+    <span class="@statusColorClass">@systemStatus</span>
+</div>
+
+
+@code {
+    private RequestModel request = new();
+    private bool bodySelected = true;
+    private string resultsText = "";
+    private string bodyTabClass = "tab-selected";
+    private string resultsTabClass = "tab-unselected";
+    private string systemStatus = "Ready";
+    private string statusColorClass = "status-bar-ready";
+
+    private async Task HandleValidSubmit()
+    {
+        systemStatus = "Calling API...";
+        statusColorClass = "status-bar";
+        resultsText = "";
+
+        if (request.ApiText is null || api.IsValidUrl(request.ApiText) == false)
+        {
+            systemStatus = "Invalid URL";
+            statusColorClass = "status-bar-error";
+            return;
+        }
+
+        HttpAction action = request.HttpVerbSelection ?? HttpAction.GET;
+
+        try
+        {
+            resultsText = await api.CallApiAsync(request.ApiText, request.Body, action);
+            ResultsClick();
+            systemStatus = "Ready";
+            statusColorClass = "status-bar-ready";
+        }
+        catch (Exception ex)
+        {
+            resultsText = "Error: " + ex.Message;
+            systemStatus = "Error";
+            statusColorClass = "status-bar-error";
+        }
+    }
+
+    private void BodyClick()
+    {
+        bodySelected = true;
+        bodyTabClass = "tab-selected";
+        resultsTabClass = "tab-unselected";
+    }
+
+    private void ResultsClick()
+    {
+        bodySelected = false;
+        bodyTabClass = "tab-unselected";
+        resultsTabClass = "tab-selected";
+    }
+}
